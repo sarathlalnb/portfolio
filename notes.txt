@@ -1,0 +1,59 @@
+----------------------------CSS---------------------------
+-------------------CASCADING STYLE SHEET-------------------
+
+Current versions : 3
+
+Different ways to style using css :-
+
+    1) Inline :-  Styling inside the same line of the element using "style" attribute
+                style="key:value"
+                       "color:"red"
+    2) Internal :- Styling inside the same file of the element using "style" tag
+    3) External :- Styling using a separate .css file and linking using link tag
+
+
+Selectors
+        Used for selecting HTML elements into css
+
+        1) tagName Selector :- by selecting using the tagName
+        2) id Selector (#) :- used to give unique style to a single HTML element
+        3) Class Selector(.) :- used to select multiple tags 
+        4) universal Selector(*) :- used to give a style to all the tags in the HTML file
+        5) Group Selector (,) :- Used to select set of tags,id,Class to give same style
+
+Combinators
+
+    selecting by defining the relationship between elements
+
+        1)Descendant Selector/Combinator  - parentName <space> childname {   }
+        2)Child selector/Combinator  - parentName>childname{ }
+        3) Sibling Selector (~) - sibling1`sibling2 - effects on all siblings
+        4) Immediate Sibling Selector (+) sibling1+sibling2 - effects only on the first sibling
+
+
+CSS Box Model 
+
+        content 
+        padding
+        border
+        Margin
+
+
+Float - Specifies how a box should be floated.  (left,right)
+display flex
+        Justify content - start end center space-between space-around space-evenly
+        Align Items - start end center
+        flex-direction
+display Inline
+
+position 
+     -Static 
+     -Relative :- 
+      -Absolute
+      -Fixed
+      -Sticky
+
+
+Psuedo Class :-  used to define a special state of an element.
+ 
+            selector:class
