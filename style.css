@@ -1,135 +1,262 @@
-*{
-    margin: 0px;
-    padding: 0px;
-    font-family: "Roboto Slab", serif;
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Roboto Slab", serif;
 }
 
-#section{
-    width: 100%;
-    height: 100vh;
-    position: relative;
+#section {
+  width: 100%;
+  height: 100vh;
+  position: relative;
 }
 
-nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 20px 0px 0px 100px;
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0px 0px 100px;
 }
 
 nav ul li {
-    list-style: none;
-    display:inline;
-    margin: 50px 10px 0px 20px;
-
+  list-style: none;
+  display: inline;
+  margin: 50px 10px 0px 20px;
 }
 
-nav ul li a{
-    text-decoration: none;
-    font-weight: 600;
-    color: black;
+nav ul li a {
+  text-decoration: none;
+  font-weight: 600;
+  color: black;
 }
 
-nav ul li a:hover{
-    color: red;
-    text-decoration: underline;
+nav ul li a:hover {
+  color: red;
+  text-decoration: underline;
 }
 
-#home{
-    margin-top: 20px;
-    margin-left: 100px ;
+#home {
+  margin-top: 20px;
+  margin-left: 100px;
 }
 
-.home-contents{
-    margin-top: 182px;
+.home-contents {
+  margin-top: 182px;
 }
 
-#home-heading{
-    font-family: "Oswald", serif;
-    font-size: 50px;
-    margin-bottom: 20px;
+#home-heading {
+  font-family: "Oswald", serif;
+  font-size: 50px;
+  margin-bottom: 20px;
 }
 
-#lName{
-    color: orange;
-    font-family: "Oswald", serif;
+#lName {
+  color: orange;
+  font-family: "Oswald", serif;
 }
 
-.para{
-    line-height: 1.2;
+.para {
+  line-height: 1.2;
 }
 
-#download{
-    background-color: black;
-    color: white;
-    padding: 10px;
-    border-radius: 6px;
-    text-decoration: none;
-    display: inline-block;
-    margin-top: 30px;
+#download {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  border-radius: 6px;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 30px;
 }
 
-.home-images{
-        height: 75%;
-        width: 45%;
-        position: absolute;
-        right: 30px;
-        bottom: 0px;
+.home-images {
+  height: 75%;
+  width: 45%;
+  position: absolute;
+  right: 30px;
+  bottom: 0px;
 }
 
-.group{
-    position: absolute;
-    height: 100%;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    transition: bottom 2s, left 1s;
-    
+.group {
+  position: absolute;
+  height: 100%;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: bottom 2s, left 1s;
 }
 
-.home-images:hover #shape{
-    bottom:70px
+.home-images:hover #shape {
+  bottom: 70px;
 }
-.home-images:hover #girl{
-    left:40%
-}
-
-#about{
-    margin-top:  27% ;
+.home-images:hover #girl {
+  left: 40%;
 }
 
-.section-head{
+#about {
+  margin-top: 27%;
+}
+
+.section-head {
+  text-align: center;
+}
+
+.main-head {
+  font-size: 30px;
+}
+.sub-head {
+  color: green;
+  font-size: 20px;
+}
+.about-body {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 60px;
+  align-items: center;
+  text-align: center;
+}
+
+.about-body img {
+  width: 80%;
+}
+
+.about-contents {
+  text-align: left;
+  font-size: 20px;
+  margin-right: 20px;
+}
+
+.information {
+  margin-top: 10px;
+}
+.element {
+  margin-left: 10px;
+}
+
+#skills-section {
+  margin-top: 10px;
+  margin-left: 100px;
+}
+
+.skill-contents {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  margin-top: 20px;
+  align-items: center;
+}
+
+.bars {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  padding: 10px 0px;
+}
+
+.bar-head,
+.bar-perc {
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.base-bar {
+  height: 9px;
+  width: 100%;
+  background-color: black;
+  border-radius: 10px;
+  position: absolute;
+  bottom: 0;
+}
+.html-bar {
+  background-color: orange;
+  width: 89%;
+}
+.css-bar {
+  background-color: orange;
+  width: 69%;
+}
+.js-bar {
+  background-color: orange;
+  width: 90%;
+}
+.react-bar {
+  background-color: orange;
+  width: 78%;
+}
+
+.icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+.anim {
+  height: 50px;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.brand {
+  color: black;
+  font-size: 30px;
+}
+
+.anim:hover {
+  background-image: linear-gradient(to bottom, red, yellow, blue);
+  animation: rotate 4s;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(30deg);
+  }
+  20% {
+    transform: rotate(-30deg);
+  }
+  40% {
+    transform: rotate(30deg);
+  }
+  60% {
+    transform: rotate(-30deg);
+  }
+  80% {
+    transform: rotate(30deg);
+  }
+  100% {
+    transform: rotate(-30deg);
+  }
+}
+
+.anim:hover .brand {
+  color: white;
+}
+
+#copy{
     text-align: center;
+    margin-top: 40px;
+}
+.up-arrow{
+    float: right;
+    margin: 0px 30px 30px 0px;
 }
 
-.main-head{
-    font-size: 30px;
-}
-.sub-head{
-    color: green;
-    font-size: 20px;
-}
-.about-body{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    margin-top: 60px;
-    align-items: center;
-    text-align: center;
+::-webkit-scrollbar{
+  width: 10px;
+  border-radius: 20px;
 }
 
-.about-body img{
-    width: 80%;
+::-webkit-scrollbar-track{
+  background-color: azure;
 }
 
-.about-contents{
-    text-align: left;
-    font-size: 20px;
-    margin-right: 20px;
+::-webkit-scrollbar-thumb{
+  background-color: orange;
+  border-radius: 20px;
 }
 
-.information{
-    margin-top: 10px;
-}
-.element{
-    margin-left: 10px;
+html{
+  scroll-behavior: smooth;
 }
